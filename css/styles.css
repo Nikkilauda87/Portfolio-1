@@ -1,0 +1,715 @@
+html,
+body {
+  font-family: "Open Sans", Verdana, sans-serif;
+  background-color: #fafafa;
+  margin: 0% 5% 0% 5%;
+  padding: 0;
+  max-width: 1920px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Cairo", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+header {
+  top: 0;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.hamburger-label {
+  display: none;
+}
+
+.logo {
+  background-image: url("../images/logo_web.png");
+  display: inline-block;
+  position: absolute;
+  background-size: contain;
+  padding: 0px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 60px;
+  z-index: 5;
+}
+
+nav {
+  display: block;
+  padding: 0%;
+  min-width: 60%;
+  margin: 0vh 0vh 0vh 0vh;
+  background-color: white;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: black;
+}
+
+.nav-link:hover,
+.nav-link-active {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+nav ul {
+  display: block;
+  padding: 0%;
+  margin: 0%;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0%;
+  padding: 2%;
+}
+
+nav a {
+  font-family: "Cairo", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0%;
+  text-decoration: none;
+  display: inline block;
+  text-align: center;
+}
+
+.wall-background-container {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
+  height: 62vh;
+  background-image: url("../images/arabic-background-wall_web.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.intro-item1 {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.intro-item2 {
+  width: 60%;
+  margin-right: 10%;
+}
+
+img.frame {
+  display: inline-block;
+  border-image: url("../images/arabic-frame-web.png") 92 92 92 92 stretch
+    stretch;
+  border-color: #f4be52;
+  border-style: inset;
+  border-width: 6vh;
+  padding: 0.6%;
+  width: 55%;
+  min-width: 190px;
+  height: 30vh;
+  background-color: #ffe;
+  position: relative;
+  z-index: 4;
+}
+
+.paragraph-container {
+  display: inline-block;
+  top: 16%;
+  z-index: 5;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 1rem;
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+p span {
+  font-weight: 600;
+  display: block;
+}
+
+/* portefolio */
+.portefolio-container {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #ffe;
+  align-items: stretch;
+  justify-content: center;
+  border-bottom: 1px solid #808050;
+  padding-bottom: 30px;
+}
+
+.portefolio-background {
+  display: flex;
+  background-image: url("../images/desert-background_web.jpg");
+  background-size: cover;
+  width: 40%;
+  margin: 10px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.portefolio-item1 {
+  background-size: contain;
+  width: 100%;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.portefolio-item2 {
+  width: 40%;
+  min-height: 250px;
+  margin: 10px;
+}
+
+.portefolio1-item1 {
+  background-image: url("../images/desert-landscape-photoshop-first_web.jpg");
+  z-index: 2;
+}
+
+.portefolio2-item1 {
+  background-image: url("../images/desert-landscape-photoshop-middle_web.jpg");
+}
+
+.portefolio3-item1 {
+  background-image: url("../images/desert-landscape-photoshop-last_web.jpg");
+}
+
+.project-link:link {
+  color: black;
+}
+.project-link:visited,
+.project-link:hover {
+  color: #808050;
+}
+
+.project-description-container {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 20px;
+  margin-top: 5px;
+}
+
+/* photos */
+.photos-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  background-color: #ffe;
+  width: 100%;
+}
+
+.photos-item {
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  padding: 0px;
+}
+
+.photos-item1 {
+  background-image: url("../images/photos/photo1.jpg");
+}
+.photos-item2 {
+  background-image: url("../images/photos/photo2.jpg");
+}
+.photos-item3 {
+  background-image: url("../images/photos/photo3.jpg");
+}
+.photos-item4 {
+  background-image: url("../images/photos/photo4.jpg");
+}
+.photos-item5 {
+  background-image: url("../images/photos/photo5.jpg");
+}
+.photos-item6 {
+  background-image: url("../images/photos/photo6.jpg");
+}
+
+/* footer */
+
+footer {
+  min-height: 20vh;
+  background-color: #dee8cc;
+}
+
+.footer-references-container {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 130px;
+}
+
+.reference-link:link {
+  color: black;
+}
+
+.reference-link:visited,
+.reference-link:hover {
+  color: white;
+}
+
+@media (min-width: 1030px) {
+  .logo {
+    left: 17.8%;
+    top: 1%;
+  }
+
+  nav ul {
+    margin-left: 70%;
+    padding: 1% 0%;
+  }
+
+  nav li {
+    margin: 0% 4%;
+  }
+
+  .photos-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .photos-item {
+    width: 30%;
+    height: 450px;
+    min-width: 350px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1029px) {
+  html,
+  body {
+    margin: 0% 0% 0% 0%;
+  }
+
+  .logo {
+    left: 10%;
+    top: 4%;
+  }
+
+  nav {
+    display: block;
+    position: absolute;
+    z-index: 6;
+    margin: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    border-radius: 0% 0% 0% 60%;
+    transition: border-radius 1s ease-in;
+  }
+
+  .costum-menu {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 4.35vh;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    top: 10px;
+    z-index: 7;
+  }
+
+  .costum-menu i {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background: #626657;
+    width: 30px;
+    left: 4px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .costum-menu i:nth-child(1) {
+    top: 12px;
+  }
+
+  .costum-menu i:nth-child(2) {
+    top: 20px;
+  }
+
+  .costum-menu i:nth-child(3) {
+    top: 28px;
+  }
+
+  .costum-menu .active:nth-child(1) {
+    top: 20px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  .costum-menu .active:nth-child(2) {
+    background: transparent;
+  }
+  .costum-menu .active:nth-child(3) {
+    top: 20px;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+
+  nav ul {
+    margin-top: 0%;
+    transition: margin-top 1s ease-in;
+  }
+
+  nav li {
+    display: block;
+    margin: 0%;
+    padding: 2%;
+    text-align: center;
+  }
+
+  nav ul li:last-child {
+    margin-left: 30%;
+    transition: margin-left 2s 1s;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    padding: 0% 2% 0% 2%;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    color: white;
+  }
+
+  .nav-link:hover {
+    border: 2px solid white;
+    padding: 5px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    left: 0%;
+    border-radius: 0% 0% 0% 0%;
+  }
+  #hamburger-menu:checked ~ nav ul {
+    margin-top: 10%;
+  }
+
+  #hamburger-menu:checked ~ nav ul li:last-child {
+    margin-left: 0%;
+  }
+
+  /* Intro */
+  .wall-background-container {
+    background-image: url("../images/arabic-background-wall_web.jpg");
+    padding-top: 20vh;
+    padding-bottom: 30px;
+  }
+
+  img.frame {
+    border-image: url("../images/arabic-frame-tablet.png") 60 60 60 60 stretch
+      stretch;
+    border-color: #f4be52;
+    border-style: inset;
+    border-width: 6vh;
+    padding: 0.6%;
+    width: 50%;
+    min-width: 190px;
+    height: 30vh;
+  }
+
+  .paragraph-container {
+    width: 40%;
+    left: 45%;
+    top: 25%;
+  }
+
+  p {
+  }
+
+  /* portefolio */
+  .portefolio-container {
+  }
+
+  .portefolio-item1 {
+  }
+
+  .portefolio-item2 {
+    width: 60%;
+  }
+
+  .portefolio1-item1 {
+    background-image: url("../images/desert-landscape-photoshop-first_tablet.jpg");
+  }
+
+  .portefolio2-item1 {
+    background-image: url("../images/desert-landscape-photoshop-middle_tablet.jpg");
+  }
+
+  .portefolio3-item1 {
+    background-image: url("../images/desert-landscape-photoshop-last_tablet.jpg");
+  }
+
+  .photos-container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  .photos-item {
+    width: 30%;
+    height: 400px;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 599px) {
+  html,
+  body {
+    margin: 0% 0% 0% 0%;
+  }
+
+  .logo {
+    left: 5%;
+    top: 4%;
+  }
+
+  nav {
+    display: block;
+    position: absolute;
+    z-index: 6;
+    margin: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    border-radius: 0% 0% 0% 60%;
+    transition: border-radius 1s ease-in;
+  }
+
+  .costum-menu {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 4.35vh;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    top: 10px;
+    z-index: 7;
+  }
+
+  .costum-menu i {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background: #626657;
+    width: 30px;
+    left: 4px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .costum-menu i:nth-child(1) {
+    top: 12px;
+  }
+
+  .costum-menu i:nth-child(2) {
+    top: 20px;
+  }
+
+  .costum-menu i:nth-child(3) {
+    top: 28px;
+  }
+
+  .costum-menu .active:nth-child(1) {
+    top: 20px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  .costum-menu .active:nth-child(2) {
+    background: transparent;
+  }
+  .costum-menu .active:nth-child(3) {
+    top: 20px;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+
+  nav ul {
+    margin-top: 0%;
+    transition: margin-top 1s ease-in;
+  }
+
+  nav li {
+    display: block;
+    margin: 0%;
+    padding: 2%;
+    text-align: center;
+  }
+
+  nav ul li:last-child {
+    margin-left: 30%;
+    transition: margin-left 2s 1s;
+  }
+
+  nav a {
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    padding: 0% 2% 0% 2%;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    color: white;
+  }
+
+  .nav-link:hover {
+    border: 2px solid white;
+    padding: 5px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    left: 0%;
+    border-radius: 0% 0% 0% 0%;
+  }
+  #hamburger-menu:checked ~ nav ul {
+    margin-top: 10%;
+  }
+
+  #hamburger-menu:checked ~ nav ul li:last-child {
+    margin-left: 0%;
+  }
+
+  /* Intro */
+  .wall-background-container {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+    background-image: url("../images/arabic-background-wall_mobile.jpg");
+  }
+
+  .intro-item1 {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  .intro-item2 {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  img.frame {
+    display: block;
+    border-image: url("../images/arabic-frame-tablet.png") 60 60 60 60 stretch
+      stretch;
+    border-color: #f4be52;
+    border-style: inset;
+    border-width: 6vh;
+    padding: 0.6%;
+    width: 40%;
+    max-width: 190px;
+    height: 26vh;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+
+  .paragraph-container {
+    display: block;
+    width: 90%;
+    left: 5%;
+    top: 44%;
+  }
+
+  p {
+  }
+
+  /* portefolio */
+  .portefolio-container {
+    flex-flow: column nowrap;
+  }
+
+  .portefolio-background {
+    width: 90%;
+    z-index: 1;
+  }
+
+  .portefolio-item1 {
+    background-color: #ffe;
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .portefolio-item2 {
+    width: 90%;
+    min-height: 250px;
+    margin: 5px;
+  }
+
+  .portefolio1-item1 {
+    background-image: url("../images/desert-landscape-photoshop-first_tablet.jpg");
+  }
+
+  .portefolio2-item1 {
+    background-image: url("../images/desert-landscape-photoshop-middle_tablet.jpg");
+  }
+
+  .portefolio3-item1 {
+    background-image: url("../images/desert-landscape-photoshop-last_tablet.jpg");
+  }
+
+  .photos-container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  .photos-item {
+    width: 80%;
+    height: 450px;
+    min-width: 80%;
+  }
+
+  /* footer */
+
+  footer {
+  }
+
+  .footer-references-container {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+}
